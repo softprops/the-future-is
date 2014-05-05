@@ -1,0 +1,202 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch);
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700);
+@import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+
+body {
+  font-family: 'Asap', sans-serif;
+  line-height:2.9em;
+}
+
+pre, ul, em {
+  line-height:1.25em;
+}
+
+.blue {
+  color:#19ECFF;
+}
+
+.pink {
+  color:#D60D96;
+}
+
+.mute {
+  color:#ccc;
+  font-size:smaller;
+}
+
+.top, .bottom {
+  height: 50%;
+  padding:.25em;
+}
+
+.top {
+  color:#fff;
+  background:#19ECFF;
+}
+
+.top * {
+  padding-top:10%;
+}
+
+.bottom {
+  color:#19ECFF;
+  background:#fff;
+}
+
+.center {
+  text-align:center;
+}
+
+.right {
+  text-align:right;
+}
+
+.hugeish {
+  font-size:100px;
+}
+
+.huge {
+  font-size:140px;  
+}
+
+h1, .shadow { text-shadow: 0 0 3px rgba(0, 0, 0, .15); }
+
+em {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+a:link, a:visited {
+  color:#19ECFF;
+}
+
+h1 em {
+  color:#19ECFF;
+}
+
+em strong {
+  color:#0DB5D6;
+}
+
+#slide-0 {
+  color:#fff;
+  text-align:right;
+  width:100%;
+  height:100%;  
+  background: linear-gradient(
+      rgba(100, 224, 217, 0.05), 
+      rgba(100,224, 217, 0.45)
+    ), url(/main/chalkboard.jpg) repeat 50% 50%;
+}
+
+#slide-0 h1 {
+  margin-top:10%;
+  margin-right:.1em;
+}
+
+#slide-1 {
+  background: linear-gradient(
+      rgba(200, 250, 255, 0.5), 
+      rgba(250, 250, 255, 0.1)
+    ), url(/main/sea.jpg) no-repeat 0 0;
+  width:100%;
+  height:100%;
+  background-size:100% 100%;
+}
+
+#slide-1 p.pushdown {
+  text-align:right;
+  color:white;
+  margin-top:10%;
+}
+
+#slides #slide-2 .container {
+  height:100%;
+  padding:0;
+  color:#fff;
+}
+
+#slide-5 {
+  background:#19ECFF;
+  color:#fff;
+}
+
+#slide-5 em {
+  color:#fff;
+}
+
+#slide-3 {
+  background: url(/main/clean.jpg) no-repeat 100% 0;
+  background-size: contain;
+}
+
+#slide-6, #slide-8, #slide-12, #slide-15, #slide-29 {
+  background:#FFE0F5;
+  color:#D60D96;
+}
+
+#slide-6 strong, #slide-12 strong {
+  color:#fff;
+}
+
+#slide-7 h1 {
+  margin-top:7%;
+}
+
+#slide-8, #slide-15, #slide-29 {
+  color:#fff;
+}
+
+#slide-8 strong, #slide-15 strong, #slide-29 strong {
+  color:#D60D96;
+}
+
+#slide-9 h1, #slide-13 h1 {
+  margin-top:20%;
+}
+
+#slide-10 {
+  color:#fff;
+  text-align:right;
+  width:100%;
+  height:100%;
+  background: url(/main/lessbetter.jpg) no-repeat 0 50%;
+  background-color:#333;
+  background-size:contain;
+}
+
+#slide-11 {
+  color:#fff;
+  text-align:right;
+  width:100%;
+  height:100%;
+  background: url(/main/fixie.jpg) no-repeat 50%;
+  background-color:#1C0035;
+  background-size:contain;
+}
+
+#slide-13 {
+  background:#D4F7FF;
+  color:#fff;
+}
+
+#slide-13 h1 {
+  color:#0DB5D6;
+}
+
+#slide-14 h1 {
+  margin-top:10%;
+}
+
+#slide-17 h1 {
+  margin-top: 15%;
+}
+
+#slide-20 pre {
+  margin-top:15%;
+}
+
+#slides #slide-22 .container {
+  height:100%;
+  padding:0;
+  color:#fff;
+}
