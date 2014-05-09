@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin+Sketch);
 @import url(http://fonts.googleapis.com/css?family=Asap:400,700);
 @import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
 body {
   font-family: 'Asap', sans-serif;
@@ -69,7 +70,7 @@ a:link, a:visited {
   color:#19ECFF;
 }
 
-h1 em {
+em {
   color:#19ECFF;
 }
 
@@ -174,12 +175,12 @@ em strong {
   background-size:contain;
 }
 
-#slide-13 {
+#slide-13, #slide-30 {
   background:#D4F7FF;
   color:#fff;
 }
 
-#slide-13 h1 {
+#slide-13 h1, #slide-30 h1 {
   color:#0DB5D6;
 }
 

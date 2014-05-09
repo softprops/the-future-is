@@ -8,7 +8,8 @@ _.flatMap(Oslo)&nbsp;_
 
 !SLIDE
 <h1 class="huge">our story,<h1>
-<h1 class="huge">the sea.</h1>
+<h1 class="huge">the <span class="pink">sea</span></h1>
+<h1><i class="fa fa-anchor"></i></h1>
 <p class="pushdown"><em>it's (largely) our fault</em></p>
 
 !SLIDE
@@ -36,7 +37,7 @@ _.flatMap(Oslo)&nbsp;_
 !SLIDE
 
 <h1 class="huge">
-enough! scrap this and start over with <em>_</em>.
+%$#~! let's scrap this and start over with <em>_</em>.
 </h1>
 
 !SLIDE
@@ -48,7 +49,7 @@ enough! scrap this and start over with <em>_</em>.
 
 <h1 class="huge">&ldquo;you go to <strong class="shadow">war</strong> with the <strong>algebra</strong> you&apos;ve got&rdquo;</h1>
 
-&ndash;[@posco](https://twitter.com/posco) on [reality](https://twitter.com/softprops/status/439810801189531648)
+&ndash; [@posco](https://twitter.com/posco) on [reality](https://twitter.com/softprops/status/439810801189531648) <i class="fa fa-twitter"></i>
 
 !SLIDE
 
@@ -59,6 +60,7 @@ enough! scrap this and start over with <em>_</em>.
 !SLIDE
 
 <h1 class="huge">&ldquo;the <strong>future</strong> is <strong>combinators</strong>&rdquo;</h1>
+( not [plastics](https://www.youtube.com/watch?v=PSxihhBzCjk) )
 
 &ndash;[@posco](https://twitter.com/posco) on the design of [summingbird](https://github.com/twitter/summingbird)
 
@@ -75,9 +77,7 @@ enough! scrap this and start over with <em>_</em>.
 
 !SLIDE
 
-# &ldquo;If you can't <strong>explain</strong> it <strong>simply</strong>, you don't <strong>understand</strong> it <strong>well</strong> enough&rdquo;
-
-&mdash;[@einstein](http://en.wikipedia.org/wiki/Albert_Einstein)
+# &ldquo;If you can't <strong>explain</strong> it <strong>simply</strong>, you don't <strong>understand</strong> it <strong>well</strong> enough&rdquo; &mdash;[@einstein](http://en.wikipedia.org/wiki/Albert_Einstein)
 
 !SLIDE
 
@@ -90,30 +90,29 @@ enough! scrap this and start over with <em>_</em>.
 
 !SLIDE
 
-<h1 class="huge right">the <strong>right</strong><br/>kind of<br/><strong>complex</strong></h1>
+<h1 class="huge right">design for<br/>the <strong>right</strong><br/>kind of<br/><strong>complex</strong></h1>
 
 !SLIDE
 
-* _fixed in definition_
+* _essence-ual (fixed in definition)_
 * _value-oriented_
 * _simple to explain_
-* _documented_
-* _isolated_
+* _isolated ( interface | execution )_
 * _honest_
 * _resourceful_
 
 !SLIDE
 <div class="center">
-<h1 class="huge"><img src="/main/sparkle.png"/>primitives<img src="/main/sparkle.png"/><h1>
+<h1 class="huge"><span class="pink"><i class="fa fa-magic"></i></span><img src="/main/sparkle.png"/><em>primitives</em><img src="/main/sparkle.png"/><h1>
 </div>
 
 !SLIDE
 
-<h1 class="hugish"><em>Libraries</em> make <em>Promises</em>. <em class="pink">Applications</em> project on the <em class="pink">Future</em>.</h1>
+<h1 class="hugish"><em>Libraries</em> make <em>Promises</em>. <em class="pink">Applications</em> project on the <em class="pink">Future</em> promised.</h1>
 
 !SLIDE
 
-<h1 class="huge center"><span class="mute">enter</span> Future:<br/> a value, deferred.<h1>
+<h1 class="huge center">Future:<br/> a value,<br/>deferred.<h1>
 
 !SLIDE
 
@@ -148,6 +147,8 @@ onComplete(_)
 
 !SLIDE
 
+<h1 class="huge">#shipit</h1>
+
 <pre>
 <span class="mute">import scala.concurrent
 import concurrent.duration._
@@ -160,15 +161,15 @@ val delay = odelay.Delay(3.seconds) {
 
 !SLIDE
 
-# _delayed_ reactions
+# _delayed_ reactions_&trade;_
 
 <pre>
 <span class="mute">// on scheduled operation</span>
-delay.future.onSuccess {
+delay.<span class="blue">future</span>.onSuccess {
   case ship: Future[T] => pkgShipped
 }
 <span class="mute">// on success of scheduled future</span>
-delay.future.flatMap(identity).onSuccess {
+delay.<span class="blue">future</span>.flatMap(identity).onSuccess {
   case arrive: T => pkgArrived
 }
 </pre>
@@ -178,10 +179,10 @@ delay.future.flatMap(identity).onSuccess {
 # delayed cancellations
 
 <pre>
-delay.future.onFailure {
+delay.<span class="blue">future</span>.onFailure {
   case NonFatal(_) => abortShip
 }
-delay.cancel()
+delay.<span class="pink">cancel</span>()
 </pre>
 
 !SLIDE
@@ -189,9 +190,14 @@ delay.cancel()
 # periodic delays
 
 <pre>
-Delay.every(1.second)() {
+Delay.<span class="pink">every</span>(1.second)() {
   tick
 }
+// tick
+// ...
+// tick
+// ...
+// tick
 </pre>
 
 !SLIDE
@@ -200,15 +206,40 @@ Delay.every(1.second)() {
 
 !SLIDE
 
-# how to survive
-# in the woods
+<h1 class="huge">how to stay alive</h1>
+<h1 class="huge">in the woods</h1>
+<p class="right">make fire from sticks <em><i class="fa fa-fire"></i></em></p>
 
+!SLIDE
+
+<h1 class="blue">sticks</h1>
 <pre>
-odelay.jdk.JdkTimer
-odelay.netty.NettyTimer
-odelay.twitter.TwitterTimer
+odelay.<span class="blue">jdk</span>.JdkTimer
+odelay.<span class="blue">netty</span>.NettyTimer
+odelay.<span class="blue">twitter</span>.TwitterTimer
+com.<a href="https://github.com/softprops/odelay/issues/new?title=I%20found%20some%20sticks!" class="blue">you</a>.YourTimer
+</pre>
+
+!SLIDE
+<pre>
+implicit val <span class="pink">nodelay</span> = new Timer {
+  <span class="blue">def apply(delay: FiniteDuration, op: => T)</span> =
+    new PromisingDelay[T]
+      with SelfCancellation[T] {
+        completePromise(op)
+    }
+  <span class="blue">def apply(
+    delay: FiniteDuration,
+    init: FiniteDuration, op: => T)</span> =
+    new PromisingDelay[T]
+      with SelfCancellation[T] {
+        op
+        cancelPromise()
+    }
+}
 </pre>
 
 !SLIDE
 
-<h1 class="huge">take your time</h1>
+<h1 class="center huge">take your time</h1>
+<h1 class="center huge"><em><i class="fa fa-clock-o"></i></em></h1>
