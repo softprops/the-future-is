@@ -214,8 +214,8 @@ delay.cancel()
 
 !SLIDE
 
-<h1 class="blue">pickup sticks</h1>
-<pre>
+<h1 class="blue center">pickup sticks</h1>
+<pre class="center">
 odelay.<span class="blue">jdk</span>.JdkTimer
 odelay.<span class="blue">netty</span>.NettyTimer
 odelay.<span class="blue">twitter</span>.TwitterTimer
@@ -248,5 +248,4 @@ implicit val <span class="pink">nodelay</span> = new Timer {
 
 !SLIDE
 
-
-<h1 class="center huge">the future is great</h1>
+<h1 class="center huge center pushdown">the future is great</h1>
