@@ -151,8 +151,7 @@ onComplete(_)
 
 <pre>
 <span class="mute">import scala.concurrent
-import concurrent.duration._
-import concurrent.ExecutionContext.Implicits.global</span>
+import concurrent.duration._</span>
 import odelay.Default.timer<br/>
 val delay = odelay.Delay(3.seconds) {
   deliverPkg
@@ -190,7 +189,7 @@ delay.<span class="pink">cancel</span>()
 # periodic delays
 
 <pre>
-Delay.<span class="pink">every</span>(1.second)() {
+val delay = Delay.<span class="pink">every</span>(1.second)() {
   tick
 }
 // tick
@@ -198,6 +197,8 @@ Delay.<span class="pink">every</span>(1.second)() {
 // tick
 // ...
 // tick
+// ...
+delay.cancel()
 </pre>
 
 !SLIDE
@@ -206,13 +207,14 @@ Delay.<span class="pink">every</span>(1.second)() {
 
 !SLIDE
 
-<h1 class="huge">how to stay alive</h1>
+<h1 class="huge">how to</h1>
+<h1 class="huge">stay <span class="blue">alive</span></h1>
 <h1 class="huge">in the woods</h1>
-<p class="right">make fire from sticks <em><i class="fa fa-fire"></i></em></p>
+<p class="right shadow">make fire from sticks <em><i class="fa fa-fire"></i></em></p>
 
 !SLIDE
 
-<h1 class="blue">sticks</h1>
+<h1 class="blue">pickup sticks</h1>
 <pre>
 odelay.<span class="blue">jdk</span>.JdkTimer
 odelay.<span class="blue">netty</span>.NettyTimer
@@ -243,3 +245,8 @@ implicit val <span class="pink">nodelay</span> = new Timer {
 
 <h1 class="center huge">take your time</h1>
 <h1 class="center huge"><em><i class="fa fa-clock-o"></i></em></h1>
+
+!SLIDE
+
+
+<h1 class="center huge">the future is great</h1>
