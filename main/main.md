@@ -1,5 +1,4 @@
 !SLIDE
-
 # the future <br/> is _primitive_
 
 _<br/>map([softprops](http://github.com/softprops))&nbsp;_
@@ -42,14 +41,14 @@ _.flatMap(Oslo)&nbsp;_
 
 !SLIDE
 <h1 class="huge">
-<em>a <strong>healthy</strong> & <strong>sustainable</strong> way to live?</em>
+<em>is this a <strong>healthy</strong> & <strong>sustainable</strong> way to live?</em>
 </h1>
 
 !SLIDE
 
 <h1 class="huge">&ldquo;you go to <strong class="shadow">war</strong> with the <strong>algebra</strong> you&apos;ve got&rdquo;</h1>
 
-&ndash; [@posco](https://twitter.com/posco) on [reality](https://twitter.com/softprops/status/439810801189531648) <i class="fa fa-twitter"></i>
+&ndash; [@posco](https://twitter.com/posco) on ideals and [reality](https://twitter.com/softprops/status/439810801189531648) <i class="fa fa-twitter"></i>
 
 !SLIDE
 
@@ -69,9 +68,10 @@ _.flatMap(Oslo)&nbsp;_
 <h1 class="huge">the future is <em>_</em>.</h1>
 
 !SLIDE
-<h1 class="huge">less.<h1> 
-<h1 class="huge">better.</h1>
-
+<h1 class="gray">weniger,<h1>
+<h1 class="gray">aber besser.</h1>
+<h1 class="hugish">less,<h1>
+<h1 class="hugish">better.</h1>
 !SLIDE
 
 
@@ -94,10 +94,10 @@ _.flatMap(Oslo)&nbsp;_
 
 !SLIDE
 
-* _essence-ual (fixed in definition)_
+* _essence-ual_
 * _value-oriented_
 * _simple to explain_
-* _isolated ( interface | execution )_
+* _isolate ( interface | execution )_
 * _honest_
 * _resourceful_
 
@@ -248,4 +248,4 @@ implicit val <span class="pink">nodelay</span> = new Timer {
 
 !SLIDE
 
-<h1 class="center huge center pushdown">the future is great</h1>
+<h1 class="center huge center pushdown">the future is <em>_</em>.</h1>

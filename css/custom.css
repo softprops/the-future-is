@@ -12,6 +12,10 @@ pre, ul, em {
   line-height:1.25em;
 }
 
+.gray {
+  color:#A2A2A2;
+}
+
 .blue {
   color:#19ECFF;
 }
