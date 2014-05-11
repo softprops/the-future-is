@@ -1,9 +1,9 @@
 !SLIDE
 # the future <br/> is _primitive_
 
-_<br/>map([softprops](http://github.com/softprops))&nbsp;_
+_<br/><span class="white">map(</span>[softprops](http://github.com/softprops)<span class="white">)</span>&nbsp;_
 
-_.flatMap(Oslo)&nbsp;_
+_<span class="white">.flatMap(</span>Oslo<span class="white">)</span>&nbsp;_
 
 !SLIDE
 <h1 class="huge">our story,<h1>
@@ -69,9 +69,7 @@ _.flatMap(Oslo)&nbsp;_
 
 !SLIDE
 <h1 class="gray">weniger,<h1>
-<h1 class="gray">aber besser.</h1>
-<h1 class="hugish">less,<h1>
-<h1 class="hugish">better.</h1>
+<h1 class="gray">aber<h1><h1 class="gray">besser.</h1>
 !SLIDE
 
 
@@ -214,7 +212,7 @@ delay.cancel()
 
 !SLIDE
 
-<h1 class="blue center">pickup sticks</h1>
+<h1 class="blue center">fire wood</h1>
 <pre class="center">
 odelay.<span class="blue">jdk</span>.JdkTimer
 odelay.<span class="blue">netty</span>.NettyTimer

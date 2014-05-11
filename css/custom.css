@@ -24,6 +24,10 @@ pre, ul, em {
   color:#D60D96;
 }
 
+.white {
+  color:#fff;
+}
+
 .mute {
   color:#ccc;
   font-size:smaller;
