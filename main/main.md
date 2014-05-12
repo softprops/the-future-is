@@ -138,6 +138,7 @@ onComplete(_)
 !SLIDE
 
 <h1 class="huge center">case study: <em>&ldquo;Delays&rdquo;</em></h1>
+<h1 class="center huge"><em><i class="fa fa-clock-o"></i></em></h1>
 
 !SLIDE
 
@@ -221,29 +222,7 @@ com.<a href="https://github.com/softprops/odelay/issues/new?title=I%20found%20so
 </pre>
 
 !SLIDE
-<pre>
-implicit val <span class="pink">nodelay</span> = new Timer {
-  <span class="blue">def apply(delay: FiniteDuration, op: => T)</span> =
-    new PromisingDelay[T]
-      with SelfCancellation[T] {
-        completePromise(op)
-    }
-  <span class="blue">def apply(
-    delay: FiniteDuration,
-    init: FiniteDuration, op: => T)</span> =
-    new PromisingDelay[T]
-      with SelfCancellation[T] {
-        op
-        cancelPromise()
-    }
-}
-</pre>
-
-!SLIDE
-
-<h1 class="center huge">take your time</h1>
-<h1 class="center huge"><em><i class="fa fa-clock-o"></i></em></h1>
-
-!SLIDE
 
 <h1 class="center huge center pushdown">the future is <em>_</em>.</h1>
+
+!SLIDE
